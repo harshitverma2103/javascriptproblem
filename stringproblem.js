@@ -28,3 +28,20 @@ const repeatable_Char = (str) => {
 console.log(repeatable_Char("testable"));
 console.log(repeatable_Char("octopus"));
 console.log(repeatable_Char("repeat"));
+
+
+// problem 3
+
+const count_Z = (str) => {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == 'z') {
+            count++;
+        }
+    }
+    return count;
+}
+
+console.log(count_Z("zzz"));
+console.log(count_Z("zack"));
+console.log(count_Z("hello"));
