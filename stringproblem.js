@@ -45,3 +45,20 @@ const count_Z = (str) => {
 console.log(count_Z("zzz"));
 console.log(count_Z("zack"));
 console.log(count_Z("hello"));
+
+
+// problem 4 
+
+const countUpperChar = (str) => {
+    let result = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] >= 'A' && str[i] <= 'Z') {
+            result++
+        }
+    }
+    return result;
+}
+
+console.log(countUpperChar("TriSeCt100"));
+console.log(countUpperChar("allsmall"));
+console.log(countUpperChar("ALLCAPS"));
