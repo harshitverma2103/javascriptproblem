@@ -62,3 +62,20 @@ const countUpperChar = (str) => {
 console.log(countUpperChar("TriSeCt100"));
 console.log(countUpperChar("allsmall"));
 console.log(countUpperChar("ALLCAPS"));
+
+
+// problem 5
+
+const countLowerChar = (str) => {
+    let result = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] >= 'a' && str[i] <= 'z') {
+            result++
+        }
+    }
+    return result;
+}
+
+console.log(countLowerChar("ratCatmAt"));
+console.log(countLowerChar("allsmall"));
+console.log(countLowerChar("triSEct"));
