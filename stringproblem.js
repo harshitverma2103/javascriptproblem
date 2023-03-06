@@ -93,9 +93,26 @@ const count_xy = (str) => {
             count_y++;
         }
     }
-    console.log("count of x", count_x);
-    console.log("count of y", count_y)
+    console.log("count of x -", count_x);
+    console.log("count of y -", count_y)
 }
 
 count_xy("execrise");
 count_xy("myday");
+
+
+// problem 7 
+
+const upperlower_Char = (str) => {
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] >= 'a' && str[i] <= 'z') {
+            console.log(str[i], ": small");
+        }
+        else if (str[i] >= 'A' && str[i] <= 'Z') {
+            console.log(str[i], ": capital");
+        }
+    }
+}
+
+upperlower_Char("car");
+upperlower_Char("TriSeCt");
