@@ -79,3 +79,23 @@ const countLowerChar = (str) => {
 console.log(countLowerChar("ratCatmAt"));
 console.log(countLowerChar("allsmall"));
 console.log(countLowerChar("triSEct"));
+
+
+// problem 6 
+
+const count_xy = (str) => {
+    let count_x = 0;
+    let count_y = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == 'x') {
+            count_x++;
+        } else if (str[i] == 'y') {
+            count_y++;
+        }
+    }
+    console.log("count of x", count_x);
+    console.log("count of y", count_y)
+}
+
+count_xy("execrise");
+count_xy("myday");
