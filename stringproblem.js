@@ -267,3 +267,20 @@ console.log(occurrence_char("code"));
 console.log(occurrence_char("dad"));
 console.log(occurrence_char("Asana"));
 console.log(occurrence_char("tax"));
+
+
+// problem 16
+
+const removeLowerChar = (str) => {
+    let result = ""; 
+    for ( let i = 0; i < str.length; i++) {
+        if(!(str[i] >= 'a' && str[i] <= 'z')) {
+            result += str[i];
+        }
+    }
+    return result;
+}
+
+console.log(removeLowerChar("Table-Tennis"));
+console.log(removeLowerChar("Raj-Sinha"));
+console.log(removeLowerChar("Top#100"));
