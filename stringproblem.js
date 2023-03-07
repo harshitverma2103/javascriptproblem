@@ -272,9 +272,9 @@ console.log(occurrence_char("tax"));
 // problem 16
 
 const removeLowerChar = (str) => {
-    let result = ""; 
-    for ( let i = 0; i < str.length; i++) {
-        if(!(str[i] >= 'a' && str[i] <= 'z')) {
+    let result = "";
+    for (let i = 0; i < str.length; i++) {
+        if (!(str[i] >= 'a' && str[i] <= 'z')) {
             result += str[i];
         }
     }
@@ -284,3 +284,20 @@ const removeLowerChar = (str) => {
 console.log(removeLowerChar("Table-Tennis"));
 console.log(removeLowerChar("Raj-Sinha"));
 console.log(removeLowerChar("Top#100"));
+
+
+// problem 17 
+
+const remove_ExtraChar = (str) => {
+    let result = "";
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] != '$') {
+            result += str[i];
+        }
+    }
+    return result;
+}
+
+console.log(remove_ExtrasChar("$hello"));
+console.log(remove_ExtrasChar("$Dollar$"));
+console.log(remove_ExtrasChar("####$$"));
