@@ -116,3 +116,28 @@ const upperlower_Char = (str) => {
 
 upperlower_Char("car");
 upperlower_Char("TriSeCt");
+
+
+// problem 8
+
+const count_DigitsAndChar = (str) => {
+    let countOfChar = 0;
+    let countOfDigits = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] >= 'a' && str[i] <= 'z') {
+            countOfChar++;
+        } else if (str[i] >= 'A' && str[i] <= 'Z') {
+            countOfChar++;
+        } else {
+            countOfDigits++;
+        }
+    }
+    console.log("Alphabets-", countOfChar);
+    console.log("Digits -", countOfDigits);
+}
+
+
+count_DigitsAndChar("MostWanted50");
+count_DigitsAndChar("JAVA360");
+count_DigitsAndChar("100");
+count_DigitsAndChar("HeLLo");
