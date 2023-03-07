@@ -213,12 +213,33 @@ console.log(checkVowels("Automobile"));
 
 const remove_hash = (str) => {
     let modifideString = "";
-    for(let i = 0; i < str.length; i++) {
-        if(str[i] != '#') {
-            modifideString += str[i] ;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] != '#') {
+            modifideString += str[i];
         }
-    }return modifideString;
+    } return modifideString;
 }
 
-console.log("New string -",remove_hash("#global#"));
-console.log("New string -",remove_hash("#C#O#D#E#"));
+console.log("New string -", remove_hash("#global#"));
+console.log("New string -", remove_hash("#C#O#D#E#"));
+
+
+// problem 14
+
+const changeCharInNumber = (str) => {
+    let result = "";
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == '1') {
+            result += 'ab';
+        } else if (str[i] == '9') {
+            result += 'c';
+        } else {
+            result += str[i];
+        }
+    }
+    return result;
+}
+
+console.log(changeCharInNumber("abc"));
+console.log(changeCharInNumber("479"));
+console.log(changeCharInNumber("179"));
