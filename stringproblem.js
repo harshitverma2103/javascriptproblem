@@ -243,3 +243,27 @@ const changeCharInNumber = (str) => {
 console.log(changeCharInNumber("abc"));
 console.log(changeCharInNumber("479"));
 console.log(changeCharInNumber("179"));
+
+
+// problem 15
+
+const occurrence_char = (str) => {
+    let newString = "";
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == 'd') {
+            newString += 'dd';
+        } else if (str[i] == 'A') {
+            newString += 'AA';
+        } else if (str[i] == 'a') {
+            newString += 'aa';
+        } else {
+            newString += str[i];
+        }
+    }
+    return newString;
+}
+
+console.log(occurrence_char("code"));
+console.log(occurrence_char("dad"));
+console.log(occurrence_char("Asana"));
+console.log(occurrence_char("tax"));
