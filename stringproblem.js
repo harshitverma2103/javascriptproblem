@@ -174,6 +174,7 @@ const reverse = (str) => {
 }
 
 console.log(reverse("happy"));
+console.log(reverse("Bikes"));
 
 
 // problem 11 
