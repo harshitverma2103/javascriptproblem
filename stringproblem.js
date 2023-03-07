@@ -190,3 +190,20 @@ const isPalindrome = (str) => {
 console.log(isPalindrome('deed'));
 console.log(isPalindrome('madam'));
 console.log(isPalindrome('ram'));
+
+
+// problem 12
+
+const checkVowels = (str) => {
+    let countOfVowels = 0;
+    const vowels = ['a', 'e', 'i ', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    for (let i = 0; i <= str.length; i++) {
+        if (vowels.includes(str[i])) {
+            countOfVowels++
+        }
+    }
+    return countOfVowels;
+}
+
+console.log(checkVowels("Education"));
+console.log(checkVowels("Automobile"));
