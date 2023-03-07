@@ -207,3 +207,18 @@ const checkVowels = (str) => {
 
 console.log(checkVowels("Education"));
 console.log(checkVowels("Automobile"));
+
+
+// problem 13 
+
+const remove_hash = (str) => {
+    let modifideString = "";
+    for(let i = 0; i < str.length; i++) {
+        if(str[i] != '#') {
+            modifideString += str[i] ;
+        }
+    }return modifideString;
+}
+
+console.log("New string -",remove_hash("#global#"));
+console.log("New string -",remove_hash("#C#O#D#E#"));
