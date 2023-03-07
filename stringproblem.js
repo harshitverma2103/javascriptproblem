@@ -288,7 +288,7 @@ console.log(removeLowerChar("Top#100"));
 
 // problem 17 
 
-const remove_ExtraChar = (str) => {
+const remove_ExtrasChar = (str) => {
     let result = "";
     for (let i = 0; i < str.length; i++) {
         if (str[i] != '$') {
