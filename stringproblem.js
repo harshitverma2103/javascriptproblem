@@ -187,3 +187,5 @@ const isPalindrome = (str) => {
     return true;
 }
 console.log(isPalindrome('deed'));
+console.log(isPalindrome('madam'));
+console.log(isPalindrome('ram'));
