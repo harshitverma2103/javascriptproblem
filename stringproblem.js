@@ -161,3 +161,16 @@ const print_Pattern = (str) => {
 
 print_Pattern("car");
 print_Pattern("trisect");
+
+
+// problem 10 
+
+const reverse = (str) => {
+    let reverseString = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        reverseString += str[i];
+    }
+    return reverseString;
+}
+
+console.log(reverse("happy"));
