@@ -141,3 +141,23 @@ count_DigitsAndChar("MostWanted50");
 count_DigitsAndChar("JAVA360");
 count_DigitsAndChar("100");
 count_DigitsAndChar("HeLLo");
+
+
+// Problem 9 
+
+const print_Pattern = (str) => {
+    let pattern = "";
+    for (let i = 0; i < str.length; i++) {
+        if (i % 2 !== 0) {
+            pattern += "#";
+            console.log(pattern);
+        }
+        else {
+            pattern += str[i];
+            console.log(pattern);
+        }
+    }
+}
+
+print_Pattern("car");
+print_Pattern("trisect");
