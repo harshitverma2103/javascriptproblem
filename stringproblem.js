@@ -301,3 +301,14 @@ const remove_ExtrasChar = (str) => {
 console.log(remove_ExtrasChar("$hello"));
 console.log(remove_ExtrasChar("$Dollar$"));
 console.log(remove_ExtrasChar("####$$"));
+
+
+
+// problem 18
+
+const string_to_array = (str) => {
+     return str.trim().split(" ");
+};
+
+console.log (string_to_array('Rajiv Kumar'));
+console.log (string_to_array('Happy Holi'));
