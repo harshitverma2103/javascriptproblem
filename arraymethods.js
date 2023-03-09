@@ -16,3 +16,9 @@ console.log(newArr);
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 console.log(fruits.pop());
+
+
+// 4. shift()
+
+const number = [1, 3, 5, 7, 8];
+console.log(number.shift());
