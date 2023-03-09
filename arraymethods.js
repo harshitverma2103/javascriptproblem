@@ -22,3 +22,10 @@ console.log(fruits.pop());
 
 const number = [1, 3, 5, 7, 8];
 console.log(number.shift());
+
+
+// 5 . concat
+
+let arr_1 = [1, 2, 3, 4, 5];
+let arr_2 = [6, 7, 8, 9, 10];
+console.log(arr_1.concat(arr_2));
