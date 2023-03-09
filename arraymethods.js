@@ -7,6 +7,12 @@ console.log(changeToString);
 
 // 2 . join 
 
-let arr = [12, 15, 13, 87] ;
-let newArr =  arr.join("-") ;
+let arr = [12, 15, 13, 87];
+let newArr = arr.join("-");
 console.log(newArr);
+
+
+// 3 . Pop
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.pop());
