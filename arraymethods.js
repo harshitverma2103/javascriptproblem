@@ -35,3 +35,12 @@ console.log(arr_1.concat(arr_2));
 
 let num = [12, 24, 45, 76, 78];
 console.log(num.fill(90));
+
+
+// 7 . filter 
+
+let age = [12, 17, 18, 29, 15];
+console.log(age.filter(checkAdult));
+function checkAdult(age) {
+    return age > 18;
+}
