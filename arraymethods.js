@@ -29,3 +29,9 @@ console.log(number.shift());
 let arr_1 = [1, 2, 3, 4, 5];
 let arr_2 = [6, 7, 8, 9, 10];
 console.log(arr_1.concat(arr_2));
+
+
+// 6 . fill() 
+
+let num = [12, 24, 45, 76, 78];
+console.log(num.fill(90));
