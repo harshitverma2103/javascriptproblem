@@ -11,5 +11,8 @@ const findOddNum = (Array) => {
 }
 
 console.log(findOddNum([1, 2, 3, 4]));
+console.log(findOddNum([11, 24, 37, 43, 98, 31]));
+console.log(findOddNum([41, 52, 83, 74, 88]));
+
 
 
