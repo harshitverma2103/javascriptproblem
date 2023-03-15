@@ -57,3 +57,20 @@ function reverseArray(arr) {
 let arr = [1, 2, 3, 4, 5];
 let reversedArr = reverseArray(arr);
 console.log(reversedArr);
+
+// problem 5
+
+const greater_Num = (Array) => {
+    let greaterNumber = 0;
+    for (let i = 0; i < Array.length; i++) {
+        if (Array[i] > greaterNumber) {
+            greaterNumber = Array[i];
+        }
+    }
+    return greaterNumber;
+
+}
+
+console.log(greater_Num([1, 2, 4, 55, 5, 9]));
+console.log(greater_Num([12, 15, 89, 90]));
+console.log(greater_Num([12, 15, 087, 45]));
