@@ -17,13 +17,13 @@ console.log(findOddNum([41, 52, 83, 74, 88]));
 // problem 2
 
 const findEvenNum = (Array) => {
-    let oddNumbers = [];
+    let evenNumbers = [];
     for (let i = 0; i < Array.length; i++) {
         if (Array[i] % 2 == 0) {
-            oddNumbers.push(Array[i]);
+            evenNumbers.push(Array[i]);
         }
     }
-    return oddNumbers;
+    return evenNumbers;
 };
 
 console.log(findEvenNum([1, 2, 3, 4]));
@@ -43,3 +43,17 @@ const find_sum = (Array) => {
 console.log(find_sum([1, 2, 3, 4, 5]));
 console.log(find_sum([11, 22, 33, 44, 55]));
 console.log(find_sum([1, 2, 3]));
+
+// problem 4
+
+function reverseArray(arr) {
+    let reversed = [];
+    for (let i = arr.length - 1; i >= 0; i--) {
+        reversed.push(arr[i]);
+    }
+    return reversed;
+}
+
+let arr = [1, 2, 3, 4, 5];
+let reversedArr = reverseArray(arr);
+console.log(reversedArr);
