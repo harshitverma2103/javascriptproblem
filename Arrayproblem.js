@@ -118,6 +118,22 @@ const averageOfList = (Array) => {
     return sum;
 }
 
-console.log(average_([1, 2, 4, 5]));
-console.log(average_([1, 1, 4]));
-console.log(average_([1, 9, 4, 2]));
+console.log(averageOfList([1, 2, 4, 5]));
+console.log(averageOfList([1, 1, 4]));
+console.log(averageOfList([1, 9, 4, 2]));
+
+
+// problem 9 
+
+const count_odd = (Array) => {
+    let count = 0;
+    for (let i = 0; i < Array.length; i++) {
+        if (Array[i] % 2 == 1) {
+            count++;
+        }
+    }
+    return count
+}
+
+console.log(count_odd([1, 2, 3, 4, 5]));
+console.log(count_odd([11, 32, 04, 25, 15]));
