@@ -88,3 +88,21 @@ const fibonacciSeries = (num) => {
 
 console.log(fibonacciSeries(8));
 console.log(fibonacciSeries(10));
+
+
+// problem 7 
+
+const loweset_Num = (Array) => {
+    let lowestNumber = Array[0];
+    for (let i = 0; i < Array.length; i++) {
+        if (Array[i] < lowestNumber) {
+            lowestNumber = Array[i];
+        }
+    }
+    return lowestNumber;
+
+}
+
+console.log(loweset_Num([1, 2, 4, 55, 5, 9]));
+console.log(loweset_Num([ 15, 89, 90]));
+console.log(loweset_Num([12, 15, 087, 45]));
