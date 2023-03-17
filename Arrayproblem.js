@@ -137,3 +137,19 @@ const count_odd = (Array) => {
 
 console.log(count_odd([1, 2, 3, 4, 5]));
 console.log(count_odd([11, 32, 04, 25, 15]));
+
+
+// problem 10 
+
+const count_even = (Array) => {
+    let count = 0;
+    for (let i = 0; i < Array.length; i++) {
+        if (Array[i] % 2 == 0) {
+            count++;
+        }
+    }
+    return count
+}
+
+console.log(count_even([1, 2, 3, 4, 5]));
+console.log(count_even([11, 32, 04, 25, 10]));
