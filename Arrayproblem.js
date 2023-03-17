@@ -83,8 +83,8 @@ const fibonacciSeries = (num) => {
     for (let i = 2; i < num; i++) {
         result[i] = result[i - 1] + result[i - 2]
     }
-    return result ;
-} 
+    return result;
+}
 
 console.log(fibonacciSeries(8));
 console.log(fibonacciSeries(10));
@@ -104,5 +104,20 @@ const loweset_Num = (Array) => {
 }
 
 console.log(loweset_Num([1, 2, 4, 55, 5, 9]));
-console.log(loweset_Num([ 15, 89, 90]));
+console.log(loweset_Num([15, 89, 90]));
 console.log(loweset_Num([12, 15, 087, 45]));
+
+
+// problem 8 
+
+const averageOfList = (Array) => {
+    let sum = 0;
+    for (let i = 0; i < Array.length; i++) {
+        sum += Array[i] / Array.length;
+    }
+    return sum;
+}
+
+console.log(average_([1, 2, 4, 5]));
+console.log(average_([1, 1, 4]));
+console.log(average_([1, 9, 4, 2]));
