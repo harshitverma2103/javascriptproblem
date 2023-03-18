@@ -153,3 +153,21 @@ const count_even = (Array) => {
 
 console.log(count_even([1, 2, 3, 4, 5]));
 console.log(count_even([11, 32, 04, 25, 10]));
+
+
+// problem 12
+
+function isAscending(arr) {
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < arr[i - 1]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+let array = [1, 2, 3, 4, 5];
+console.log(isAscending(array));
+
+array = [1, 3, 2, 4, 5];
+console.log(isAscending(array)); 
