@@ -189,3 +189,18 @@ let Array_2 = [1, 5, 2, 8, 7];
 
 console.log(isDescending(Array));
 console.log(isDescending(Array_2));
+
+
+// problem 14 
+
+const find_Index = (Array) => {
+    // let result = 0;
+    for (let i = 0; i < Array.length; i++) {
+        if (Array[i] == 3) {
+            return i;
+        }
+    }
+}
+
+console.log(find_Index([1, 2, 3, 4, 5]));
+console.log(find_Index([1, 2, 0, 4, 5, 3]));
