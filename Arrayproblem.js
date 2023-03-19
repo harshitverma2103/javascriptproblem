@@ -170,4 +170,22 @@ let array = [1, 2, 3, 4, 5];
 console.log(isAscending(array));
 
 array = [1, 3, 2, 4, 5];
-console.log(isAscending(array)); 
+console.log(isAscending(array));
+
+// problem 13
+
+function isDescending(arr) {
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] > arr[i - 1]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+
+let Array = [10, 8, 5, 4, 1];
+let Array_2 = [1, 5, 2, 8, 7];
+
+console.log(isDescending(Array));
+console.log(isDescending(Array_2));
