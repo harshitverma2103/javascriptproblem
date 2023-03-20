@@ -167,8 +167,7 @@ const sumOfEven = (Array) => {
     return sum;
 }
 
-console.log(count_even([1, 2, 3, 4, 5]));
-console.log(count_even([11, 32, 04, 25, 10]));
+console.log(sumOfEven([1, 2, 3, 4, 5]));
 
 
 // problem 12
