@@ -155,6 +155,22 @@ console.log(count_even([1, 2, 3, 4, 5]));
 console.log(count_even([11, 32, 04, 25, 10]));
 
 
+// problem 11 
+
+const sumOfEven = (Array) => {
+    let sum = 0;
+    for (let i = 0; i < Array.length; i++) {
+        if (i % 2 == 0) {
+            sum += i;
+        }
+    }
+    return sum;
+}
+
+console.log(count_even([1, 2, 3, 4, 5]));
+console.log(count_even([11, 32, 04, 25, 10]));
+
+
 // problem 12
 
 function isAscending(arr) {
@@ -194,7 +210,6 @@ console.log(isDescending(Array_2));
 // problem 14 
 
 const find_Index = (Array) => {
-    // let result = 0;
     for (let i = 0; i < Array.length; i++) {
         if (Array[i] == 3) {
             return i;
