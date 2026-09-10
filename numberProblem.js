@@ -60,4 +60,3 @@ function calculateBMI(weight, height) {
 }
 
 var calculateBMI1 = console.log(calculateBMI(75, 1.8));
-
