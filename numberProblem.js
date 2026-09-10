@@ -31,3 +31,32 @@ function ageToDays(age) {
 }
 
 const years = console.log(ageToDays(2))
+
+// problem4
+
+function degreesToRadians(degrees) {
+    return Math.PI/180 * degrees;
+}
+
+var degrees1 = console.log(degreesToRadians(270));
+
+// problem5
+
+function checkSumLessThanThird(num1, num2, num3) {
+    if(num1 + num2 < num3) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+var numbers = console.log(checkSumLessThanThird(5, 5, 15));
+
+
+// problem6
+
+function calculateBMI(weight, height) {
+    return weight/ (height * height)
+}
+
+var calculateBMI1 = console.log(calculateBMI(75, 1.8));
