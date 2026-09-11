@@ -60,3 +60,17 @@ function calculateBMI(weight, height) {
 }
 
 var calculateBMI1 = console.log(calculateBMI(75, 1.8));
+
+// problem7
+
+function isPalindrome(number) {
+    var str = number.toString();
+    for(var i = 0; i < str.length / 2; i++) {
+        if(str[i] !== str[str.length - 1 - i]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+var palindromeCheck = console.log(isPalindrome(121)); // Output: true

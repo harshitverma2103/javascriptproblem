@@ -73,7 +73,7 @@ const greater_Num = (Array) => {
 
 console.log(greater_Num([1, 2, 4, 55, 5, 9]));
 console.log(greater_Num([12, 15, 89, 90]));
-console.log(greater_Num([12, 15, 087, 45]));
+console.log(greater_Num([12, 15, 87, 45]));
 
 
 // ptoblem 6 
@@ -105,7 +105,7 @@ const loweset_Num = (Array) => {
 
 console.log(loweset_Num([1, 2, 4, 55, 5, 9]));
 console.log(loweset_Num([15, 89, 90]));
-console.log(loweset_Num([12, 15, 087, 45]));
+console.log(loweset_Num([12, 15, 87, 45]));
 
 
 // problem 8 
@@ -136,7 +136,7 @@ const count_odd = (Array) => {
 }
 
 console.log(count_odd([1, 2, 3, 4, 5]));
-console.log(count_odd([11, 32, 04, 25, 15]));
+console.log(count_odd([11, 32, 4, 25, 15]));
 
 
 // problem 10 
@@ -152,7 +152,7 @@ const count_even = (Array) => {
 }
 
 console.log(count_even([1, 2, 3, 4, 5]));
-console.log(count_even([11, 32, 04, 25, 10]));
+console.log(count_even([11, 32, 4, 25, 10]));
 
 
 // problem 11 
@@ -160,8 +160,8 @@ console.log(count_even([11, 32, 04, 25, 10]));
 const sumOfEven = (Array) => {
     let sum = 0;
     for (let i = 0; i < Array.length; i++) {
-        if (i % 2 == 0) {
-            sum += i;
+        if (Array[i] % 2 == 0) {
+            sum += Array[i];
         }
     }
     return sum;
@@ -218,3 +218,15 @@ const find_Index = (Array) => {
 
 console.log(find_Index([1, 2, 3, 4, 5]));
 console.log(find_Index([1, 2, 0, 4, 5, 3]));
+
+
+// problem15
+
+let list1 = [1,2,4];
+let list2 = [1,3,4];
+
+function mergeTwoLists(list1, list2) {
+    return [...list1, ...list2].sort((a, b) => a - b);
+}
+
+console.log(mergeTwoLists(list1, list2));
